@@ -1,0 +1,18 @@
+from business_object.pokemon.allRounderPokemon import AllRounderPokemon
+from business_object.statistic import Statistic
+
+class TestAllRounderPokemon:
+
+    def test_get_pokemon_attack_coef(self):
+        # GIVEN
+        snorlax = AllRounderPokemon(stat_current=Statistic(sp_atk=200, sp_def=100))
+
+        # WHEN
+        multiplier = snorlax.get_pokemon_attack_coef()
+
+        # THEN
+        assert multiplier == 2.5
+
+if __name__ == "__main__":
+    import pytest
+    pytest.main([__file__])

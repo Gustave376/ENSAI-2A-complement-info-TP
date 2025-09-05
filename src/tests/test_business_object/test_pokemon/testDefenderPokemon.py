@@ -1,4 +1,4 @@
-from business_object.pokemon.defender_pokemon import DefenderPokemon
+from business_object.pokemon.defenderPokemon import DefenderPokemon
 from business_object.statistic import Statistic
 
 
