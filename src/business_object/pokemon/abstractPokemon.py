@@ -1,9 +1,11 @@
+from abc import ABC, abstractmethod
+
 import copy
 
 from business_object.statistic import Statistic
 
 
-class Pokemon:
+class AbstractPokemon(ABC):
     """
     A Pokemon
     """
@@ -12,15 +14,17 @@ class Pokemon:
     # Constructor
     # -------------------------------------------------------------------------
 
+    @abstractmethod
     def __init__(self, stat_max=None, stat_current=None, level=0, name=None, type_pk=None):
-        # -----------------------------
-        # Attributes
-        # -----------------------------
-        self._stat_max: Statistic = stat_max
-        self._stat_current: Statistic = stat_current
-        self._level: int = level
-        self._name: str = name
-        self._type: str = type_pk
+        pass
+        # # -----------------------------
+        # # Attributes
+        # # -----------------------------
+        # self._stat_max: Statistic = stat_max
+        # self._stat_current: Statistic = stat_current
+        # self._level: int = level
+        # self._name: str = name
+        # self._type: str = type_pk
 
     # -------------------------------------------------------------------------
     # Methods
