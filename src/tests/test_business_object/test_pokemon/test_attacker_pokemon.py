@@ -1,5 +1,6 @@
-from business_object.pokemon.attackerPokemon import AttackerPokemon
+from business_object.pokemon.attacker_pokemon import AttackerPokemon
 from business_object.statistic import Statistic
+
 
 class TestAttackerPokemon:
 
@@ -12,6 +13,7 @@ class TestAttackerPokemon:
 
         # THEN
         assert multiplier == 11.5
+
 
 if __name__ == "__main__":
     import pytest

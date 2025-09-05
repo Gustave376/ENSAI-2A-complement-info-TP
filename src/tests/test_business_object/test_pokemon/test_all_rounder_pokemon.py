@@ -1,5 +1,6 @@
-from business_object.pokemon.allRounderPokemon import AllRounderPokemon
+from business_object.pokemon.all_rounder_pokemon import AllRounderPokemon
 from business_object.statistic import Statistic
+
 
 class TestAllRounderPokemon:
 
@@ -12,6 +13,7 @@ class TestAllRounderPokemon:
 
         # THEN
         assert multiplier == 2.5
+
 
 if __name__ == "__main__":
     import pytest

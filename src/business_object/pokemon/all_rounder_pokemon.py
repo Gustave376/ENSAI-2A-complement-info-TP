@@ -1,4 +1,5 @@
-from business_object.pokemon.abstractPokemon import AbstractPokemon
+from business_object.pokemon.abstract_pokemon import AbstractPokemon
+
 
 class AllRounderPokemon(AbstractPokemon):
 
@@ -8,8 +9,8 @@ class AllRounderPokemon(AbstractPokemon):
         stat_current=None,
         level=0,
         name=None
-        ):
-        super().__init__(stat_max, stat_current, level, name, type_pk = "all rounder")
+    ):
+        super().__init__(stat_max, stat_current, level, name, type_pk="all rounder")
 
     def get_pokemon_attack_coef(self):
         multiplier = 1 + (self.sp_atk_current + self.sp_def_current) / 200

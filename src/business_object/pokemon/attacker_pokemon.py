@@ -1,4 +1,5 @@
-from business_object.pokemon.abstractPokemon import AbstractPokemon
+from business_object.pokemon.abstract_pokemon import AbstractPokemon
+
 
 class AttackerPokemon(AbstractPokemon):
 
@@ -8,9 +9,8 @@ class AttackerPokemon(AbstractPokemon):
         stat_current=None,
         level=0,
         name=None
-        ):
-        super().__init__(stat_max, stat_current, level, name, type_pk = "attacker")
-
+    ):
+        super().__init__(stat_max, stat_current, level, name, type_pk="attacker")
 
     def get_pokemon_attack_coef(self):
         multiplier = 1 + (self.speed_current + self.attack_current) / 200
